@@ -1,16 +1,13 @@
 'use strict';
-// make sure to reuturn each function or else... undefined :( ..)
-const cutPizzaSlices = function (pizza) {
+
+function findTarget(arr,target){
+          return arr.indexOf(target);
           
-          return function (group) {
-                    // Number.parseFloat(pizza).toFixed(2);
-                    return `Each person gets ${Number.parseFloat(pizza / group).toFixed(2)} slices of pizza`; 
-                     
-          }
-
 }
-var sharePizza = cutPizzaSlices(8);
+var arr1 = [4,5,6,7,0,1,2]
+var target1 = 0;
+var arr2 = [4,5,6,7,0,1,2]
+var target2 = 3;
 
-console.log(sharePizza(2));
-console.log(sharePizza(3)); 
-
+console.log(findTarget(arr1,target1));
+console.log(arr2.indexOf(arr2,target2));

@@ -1,27 +1,31 @@
 "use strict";
+// function average (arr) {
+//   let total =0;
+//   for(let x =0; x<arr.length;x++){
+//     total += arr[x];
+//     console.log(`In loop at${x} and the total is ${total}`)
+//   }
 
-// function exercise (excercises) {
-// return `Todays excercise : ${excercises}`
+//   return total/(arr.length-1);
 
 // }
 
-// var run = exercise('running');
-// var swim = exercise('swimming');
+// var arr1 = [1,4,7]
+// var arr2 = [10,5]
+// var arr3 = [1.5,3,2.5,1]
 
-// console.log(run());
-// console.log(swim());
+// console.log(average(arr1));
+// console.log(average(arr2));
+// console.log(average(arr3));
 
-const exercise = function (workout) {
-    return 
-    function () {
-
-    return `Todays exercise: ${workout}`;
-
-    // console.log('Todays exercise:', workout);
-  };
-};
-// saving the function exercise into a varibale called run
-var run = exercise("running");
-console.log(run());
-var swim = exercise("swimming");
-console.log(swim());
+function averg(numbers) {
+  let sum = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+averg([10, 10, 10, 10]);
+console.log(averg([1,4,7]));
+console.log(averg([10,5]))
+console.log(averg([1.5,3,2.5,1]))
